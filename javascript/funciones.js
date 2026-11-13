@@ -37,9 +37,7 @@ function crearCorazon() {
     corazon.classList.add("corazon");
     
     corazon.innerHTML = Math.random() > 0.5 ? "💚" : "♡";
-    //corazon.innerHTML = Math.random() > 0.5 ? "💙" : "♡";
-    //corazon.innerHTML = Math.random() > 0.5 ? "💚" : "♡";
-
+   
     // Posición aleatoria
     corazon.style.left = Math.random() * 100 + "vw";
 
@@ -52,7 +50,7 @@ function crearCorazon() {
         (3 + Math.random() * 3) + "s";
     
     corazon.style.color = "#00C853";
-    //corazon.style.color = "#1687df";
+  
 
     contenedor.appendChild(corazon);
 
@@ -74,7 +72,7 @@ const lluvia = setInterval(function() {
 
     cantidad++;
 
-    if (cantidad >= 30) {
+    if (cantidad >= 60) {
         clearInterval(lluvia);
     }
 
