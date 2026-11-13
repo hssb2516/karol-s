@@ -1,3 +1,28 @@
+// REPRODUCTOR DE MÚSICA
+
+const musica = document.getElementById("musica");
+const musicaBtn = document.getElementById("musicaBtn");
+
+musicaBtn.addEventListener("click", async function() {
+
+    if (musica.paused) {
+
+        try {
+            await musica.play();
+            musicaBtn.innerHTML = "⏸ Pausar canción";
+
+        } catch (error) {
+            musicaBtn.innerHTML = "🎵 Intentar reproducir";
+        }
+
+    } else {
+
+        musica.pause();
+        musicaBtn.innerHTML = "🎵 Reproducir nuestra canción";
+
+    }
+
+});
 
 // CONTENEDOR DE CORAZONES
 
