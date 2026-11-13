@@ -269,3 +269,21 @@ footer {
     }
 
 }
+
+.boton-musica {
+    position: fixed;
+    bottom: 20px;
+    right: 15px;
+    z-index: 2000;
+
+    background: #ff4f91;
+    color: white;
+
+    border: none;
+    border-radius: 30px;
+    padding: 13px 20px;
+
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
