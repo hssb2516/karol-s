@@ -126,7 +126,7 @@ document.addEventListener("DOMContentLoaded", () => {
         document.body.appendChild(vuelo);
 
         if (mensajeUnicornio) {
-            mensajeUnicornio.textContent = " 💙✨ Al infinito y mas alla ✨💚";
+            mensajeUnicornio.textContent = " 💙✨ Al infinito y mas alla ✨💚 ";
         }
 
         const intervalo = window.setInterval(() => {
